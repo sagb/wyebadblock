@@ -4,7 +4,8 @@ Subject: system-wide blocklist
 
 ---
  ephy-uri-tester.c | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ README.md | 4 ++--
+ 1 file changed, 3 insertion(+), 3 deletion(-)
 
 diff --git a/ephy-uri-tester.c b/ephy-uri-tester.c
 index 639b3aa..e16e23d 100644
@@ -19,3 +20,20 @@ index 639b3aa..e16e23d 100644
  
  	if (g_file_test(filter_path, G_FILE_TEST_EXISTS))
  	{
+
+diff --git a/README.md b/README.md
+index ca088ae..e041607 100644
+--- a/README.md
++++ b/README.md
+@@ -10,9 +10,9 @@ most of code of this are from https://github.com/GNOME/epiphany/tree/master/embe
+ 	sudo make install
+ 
+ then
+-copy **easylist.txt** to ~/.config/wyebadblock/
++copy **blocklist.txt** to /var/lib/wyebadblock/
+ 
+-wyebadblock only checks 'easylist.txt'
++wyebadblock only checks 'blocklist.txt'
+ 
+ 
+ You can check if it works on http://simple-adblock.com/faq/testing-your-adblocker/
