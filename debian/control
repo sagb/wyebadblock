@@ -5,8 +5,8 @@ Maintainer: Alexander Kulak <sa-dev@rainbow.by>
 Build-Depends: debhelper (>= 10), libwebkit2gtk-4.0-dev
 Standards-Version: 4.1.2
 Homepage: https://github.com/jun7/wyebadblock
-Vcs-Git: https://github.com/sagb/wyebadblock -b debian/master
-Vcs-Browser: https://github.com/sagb/wyebadblock/tree/debian/master
+Vcs-Git: https://github.com/sagb/wyebadblock -b debian/buster
+Vcs-Browser: https://github.com/sagb/wyebadblock/tree/debian/buster
 
 Package: wyebadblock
 Architecture: any
