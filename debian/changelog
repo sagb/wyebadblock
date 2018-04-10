@@ -1,10 +1,11 @@
-wyebadblock (1.0.0-0-ga5fc4f8-1~1.gbp1b899f) stretch; urgency=medium
+wyebadblock (1.0.0-0-ga5fc4f8-1~1.gbp562892) unstable; urgency=medium
 
-  ** SNAPSHOT build @1b899f17244e7813c4db1dd8ef85131b3eb3f7b6 **
+  ** SNAPSHOT build @562892989ff16c5905e4e058f1b51a895b8144ae **
 
-  * backport to stretch
+  * system-wide blocklist
+  * package cssoutput too
 
- -- Alexander Kulak <sa-dev@rainbow.by>  Tue, 10 Apr 2018 16:44:56 +0300
+ -- Alexander Kulak <sa-dev@rainbow.by>  Tue, 10 Apr 2018 17:06:46 +0300
 
 wyebadblock (1.0.0-0-ga5fc4f8-1~1.gbpa360d6) unstable; urgency=medium
 

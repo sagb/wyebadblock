@@ -1,0 +1,47 @@
+From: Alexander Kulak <sa-dev@rainbow.by>
+Date: Tue, 10 Apr 2018 17:04:10 +0300
+Subject: package cssoutput too
+
+---
+ makefile | 10 ++++++----
+ 1 file changed, 6 insertions(+), 4 deletions(-)
+
+diff --git a/makefile b/makefile
+index 1dc8cff..d6aba01 100644
+--- a/makefile
++++ b/makefile
+@@ -2,9 +2,10 @@
+ CFLAGS += -Wno-deprecated-declarations
+ #LDFLAGS=
+ EXTENSION_DIR=$(DESTDIR)/usr/lib/wyebrowser
++BINDIR=$(DESTDIR)/usr/bin
+ DAPPNAME=-DAPPNAME='"wyebadblock"'
+ 
+-all: adblock.so
++all: adblock.so wyebadblock-cssoutput
+ 
+ adblock.so: ephy-uri-tester.c ephy-uri-tester.h
+ 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $< -shared -fPIC \
+@@ -12,18 +13,19 @@ adblock.so: ephy-uri-tester.c ephy-uri-tester.h
+ 		-DEXTENSION_DIR=\"$(EXTENSION_DIR)\" \
+ 		$(DDEBUG) $(DAPPNAME)
+ 
+-cssoutput: ephy-uri-tester.c ephy-uri-tester.h
++wyebadblock-cssoutput: ephy-uri-tester.c ephy-uri-tester.h
+ 	$(CC) $(CFLAGS) $(LDFLAGS) -o $@ $< \
+ 		`pkg-config --cflags --libs gtk+-3.0 glib-2.0 webkit2gtk-4.0` \
+ 		-DEXTENSION_DIR=\"$(EXTENSION_DIR)\" \
+ 		$(DDEBUG) $(DAPPNAME)
+ 
+ clean:
+-	rm -f adblock.so
++	rm -f adblock.so wyebadblock-cssoutput
+ 
+ install: all
+ 	install -Dm755 adblock.so $(EXTENSION_DIR)/adblock.so
++	install -Dm755 wyebadblock-cssoutput $(BINDIR)/wyebadblock-cssoutput
+ 
+ uninstall:
+-	rm -f  $(EXTENSION_DIR)/adblock.so
++	rm -f  $(EXTENSION_DIR)/adblock.so $(BINDIR)/wyebadblock-cssoutput
+ 	-rmdir $(EXTENSION_DIR)

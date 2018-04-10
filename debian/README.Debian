@@ -7,5 +7,8 @@ The following modifications is made for Debian package:
   /var/lib/wyebadblock/blocklist.txt
   instead of ~/.wyebadblock/easylist.txt 
 
+* CSS generation utility (see README.md) packaged
+  as wyebadblock-cssoutput
+
 
  -- Alexander Kulak <sa-dev@rainbow.by>  Tue, 10 Apr 2018 15:12:06 +0300
