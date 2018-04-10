@@ -1,3 +1,11 @@
+wyebadblock (1.0.0-20180322-ga5fc4f8-1~1.gbp7b3521) testing; urgency=medium
+
+  ** SNAPSHOT build @7b35215843abd7e376b5ea4674acab14b24d88ed **
+
+  * backport to buster
+
+ -- Alexander Kulak <sa-dev@rainbow.by>  Tue, 10 Apr 2018 17:29:14 +0300
+
 wyebadblock (1.0.0-20180322-ga5fc4f8-1~1.gbpac246d) unstable; urgency=medium
 
   ** SNAPSHOT build @ac246dd3d2a7d7116c5d0fb4c9e9bf45436513a7 **
