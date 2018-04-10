@@ -1,10 +1,10 @@
-wyebadblock (1.0.0-0-ga5fc4f8-1~1.gbp761327) stretch; urgency=medium
+wyebadblock (1.0.0-0-ga5fc4f8-1~1.gbp8669b7) unstable; urgency=medium
 
-  ** SNAPSHOT build @761327ed0467a5b675d4d5f3be374dc3c066f321 **
+  ** SNAPSHOT build @8669b70fe3bff6c9c576758d2e4f66bfc3bba304 **
 
-  * backport to stretch
+  * snapshot in master
 
- -- Alexander Kulak <sa-dev@rainbow.by>  Tue, 10 Apr 2018 17:16:50 +0300
+ -- Alexander Kulak <sa-dev@rainbow.by>  Tue, 10 Apr 2018 17:20:06 +0300
 
 wyebadblock (1.0.0-0-ga5fc4f8-1~1.gbp562892) unstable; urgency=medium
 
