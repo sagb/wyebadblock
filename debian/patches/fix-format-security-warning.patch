@@ -1,0 +1,21 @@
+From: Alexander Kulak <sa-dev@rainbow.by>
+Date: Tue, 10 Apr 2018 16:08:39 +0300
+Subject: fix format-security warning
+
+---
+ ephy-uri-tester.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/ephy-uri-tester.c b/ephy-uri-tester.c
+index f6e170e..639b3aa 100644
+--- a/ephy-uri-tester.c
++++ b/ephy-uri-tester.c
+@@ -1037,7 +1037,7 @@ int main(int argc, char **argv)
+ 	initex(NULL, NULL);
+ 	g_thread_join(initt);
+ 
+-	g_print(uri_tester->blockcss->str);
++	g_print("%s", uri_tester->blockcss->str);
+ 	g_print("\n\n\n\n{display: none !important}\n\n\n\n");
+ //	g_print(uri_tester->blockcssprivate->str);
+ 

@@ -1,0 +1,15 @@
+Source: wyebadblock
+Section: misc
+Priority: optional
+Maintainer: Alexander Kulak <sa-dev@rainbow.by>
+Build-Depends: debhelper (>= 10), libwebkit2gtk-4.0-dev
+Standards-Version: 4.1.2
+Homepage: https://github.com/jun7/wyebadblock
+Vcs-Git: https://github.com/sagb/wyebadblock -b debian/master
+Vcs-Browser: https://github.com/sagb/wyebadblock/tree/debian/master
+
+Package: wyebadblock
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: An adblock extension for webkit2gtk browsers
+ Adopted from Epiphany to wyeb browser.

@@ -1,0 +1,11 @@
+wyebadblock for Debian
+---------------------
+
+The following modifications is made for Debian package:
+
+* Path to blocklist is changed. Put it into
+  /var/lib/wyebadblock/blocklist.txt
+  instead of ~/.wyebadblock/easylist.txt 
+
+
+ -- Alexander Kulak <sa-dev@rainbow.by>  Tue, 10 Apr 2018 15:12:06 +0300
